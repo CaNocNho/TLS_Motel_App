@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:text="Ví trí của bạn: "
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:text="123 Đường Nguyễn Văn A, Quận Bình Thạnh, Thành phố Hồ Chí Minh"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                app:drawableEndCompat="@drawable/ic_arrow_drop_down_16x16_black" />
+
+
+            <HorizontalScrollView
+                android:id="@+id/hrz_scroll_tags"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="12dp"
+                android:scrollbars="none"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!--                <com.google.android.material.chip.Chip-->
+                    <!--                    android:layout_width="wrap_content"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:text="Custom Chip"-->
+                    <!--                    app:chipBackgroundColor="#FFEB3B"-->
+                    <!--                    app:chipIconSize="24dp"-->
+                    <!--                    app:chipCornerRadius="16dp"-->
+                    <!--                    app:chipStrokeColor="@color/custom_chip_stroke_color"-->
+                    <!--                    app:chipStrokeWidth="1dp"-->
+                    <!--                    app:chipTextColor="@color/custom_chip_text_color"-->
+                    <!--                    app:chipTextAppearance="@style/CustomChipTextAppearance"-->
+                    <!--                    app:chipRippleColor="@color/custom_chip_ripple_color" />-->
+
+
+                    <com.google.android.material.chip.Chip
+                        android:layout_marginEnd="5dp"
+                        app:chipBackgroundColor="#FFEB3B"
+                        app:chipIcon="@drawable/img_decrease_64x64"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:chipStrokeWidth="1dp"
+                        android:text="Giá rẻ" />
+
+                    <com.google.android.material.chip.Chip
+                        android:layout_marginEnd="5dp"
+                        app:chipBackgroundColor="#FFEB3B"
+                        app:chipIcon="@drawable/img_destination_64x64"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:chipStrokeWidth="1dp"
+                        android:text="Gần trường" />
+
+                    <com.google.android.material.chip.Chip
+                        android:layout_marginEnd="5dp"
+                        app:chipBackgroundColor="#FFEB3B"
+                        app:chipIcon="@drawable/img_time_64x64"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:chipStrokeWidth="1dp"
+                        android:text="Giờ giấc tự do" />
+
+                    <com.google.android.material.chip.Chip
+                        android:layout_marginEnd="5dp"
+                        app:chipBackgroundColor="#FFEB3B"
+                        app:chipIcon="@drawable/img_home_tools_64x64"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:chipStrokeWidth="1dp"
+                        android:text="Đầy đủ tiện nghi" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:text="Gần bạn"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/hrz_scroll_tags" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_near"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:listitem="@layout/item_horiz_house"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:text="Đã thêm gần đây"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rv_near" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView4"
+                tools:listitem="@layout/item_vert_house" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

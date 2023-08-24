@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_home"
+        android:title="@string/bot_nav_homepage"
+        android:icon="@drawable/ic_bot_nav_homepage_24x24_black" />
+
+    <item
+        android:id="@+id/action_search"
+        android:title="@string/bot_nav_search"
+        android:icon="@drawable/ic_bot_nav_search_24x24_black" />
+
+    <item
+        android:id="@+id/action_map"
+        android:title="@string/bot_nav_map"
+        android:icon="@drawable/ic_bot_nav_map_24x24_black" />
+
+    <item
+        android:id="@+id/action_settings"
+        android:title="@string/bot_nav_setting"
+        android:icon="@drawable/ic_bot_nav_setting_24x24_black" />
+</menu>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">TLS Tìm Trọ</string>
+
+    <!--    Thông tin giới thiệu cho AppIntro-->
+    <string name="app_intro_welcome_title">Chào mừng bạn đến với</string>
+    <string name="app_intro_welcome_description">"Là người bạn đồng hành đáng tin cậy trong việc tìm kiếm những căn nhà trọ hoàn hảo, được phát triển và hỗ trợ bởi Phân Hiệu Trường Đại Học Thủy Lợi."</string>
+    <string name="app_intro_easy_title">Tìm nhà trọ dễ dàng với</string>
+    <string name="app_intro_easy_description">"Với việc cập nhật thường xuyên các lựa chọn nhà trọ do đội ngũ CTV của Phân Hiệu Đại Học Thủy Lợi tỉ mỉ chọn lọc, kèm theo giá cả hợp lý, thuận tiện cho việc di chuyển và học tập, bạn sẽ dễ dàng tìm thấy ngôi nhà trọ lý tưởng một cách nhanh chóng."</string>
+    <string name="app_intro_become_title">Trở thành cộng tác viên tìm kiếm nhà trọ với</string>
+    <string name="app_intro_become_description">Trở thành cầu nối giữa sinh viên và nhà trọ với những đãi ngộ hấp dẫn.</string>
+
+    <!--    dịch tiếng Việt cho AppIntro-->
+    <string name="app_intro_skip_button">BỎ QUA</string>
+    <string name="app_intro_next_button">TIẾP</string>
+    <string name="app_intro_back_button">QUAY LẠI</string>
+    <string name="app_intro_done_button">BẮT ĐẦU</string>
+
+    <!--    các chức năng của BotNav-->
+    <string name="bot_nav_homepage">Trang Chủ</string>
+    <string name="bot_nav_search">Tìm Kiếm</string>
+    <string name="bot_nav_map">Bản Đồ</string>
+    <string name="bot_nav_setting">Cài Đặt</string>
+
+
+</resources>
